@@ -27,21 +27,21 @@ struct FocusView: View {
                     }
                     .font(Font.custom(Settings.shared.fontName, size: viewModel.isShortRest ? 18 : 14))
                     .bold(viewModel.isShortRest)
-                    .foregroundColor(viewModel.isShortRest ? Color.orange : Color(white: 0.3))
+                    .foregroundColor(viewModel.isShortRest ? Color.prominent : Color.primary)
                     
                     Button("Work") {
                         viewModel.setActiveInterval(.work)
                     }
                     .font(Font.custom(Settings.shared.fontName, size: viewModel.isWork ? 18 : 14))
                     .bold(viewModel.isWork)
-                    .foregroundColor(viewModel.isWork ? Color.orange : Color(white: 0.3))
+                    .foregroundColor(viewModel.isWork ? Color.prominent : Color.primary)
                     
                     Button("Long Break") {
                         viewModel.setActiveInterval(.longRest)
                     }
                     .font(Font.custom(Settings.shared.fontName, size: viewModel.isLongRest ? 18 : 14))
                     .bold(viewModel.isLongRest)
-                    .foregroundColor(viewModel.isLongRest ? Color.orange : Color(white: 0.3))
+                    .foregroundColor(viewModel.isLongRest ? Color.prominent : Color.primary)
                 }
                 
                 Spacer()
@@ -57,13 +57,14 @@ struct FocusView: View {
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 24, height: 24)
-                            }.frame(width: 60, height: 60)
+                            }
+                            .foregroundColor(Color.prominent)
+                            .frame(width: 60, height: 60)
                         })
                     }
 
                     Text(viewModel.time)
                         .font(Font.custom("ProFont", size: 48))
-                        .foregroundColor(Color(white: 0.3))
 
                     if viewModel.timer.isStopped {
                         
@@ -77,6 +78,7 @@ struct FocusView: View {
                                     .frame(width: 24, height: 24)
                             }
                             .frame(width: 60, height: 60)
+                            .foregroundColor(Color.prominent)
                         })
                     }
                 }
@@ -101,7 +103,6 @@ struct FocusView: View {
                                 Text("Cancel")
                                     .font(.custom(Settings.shared.fontName, size: 10.0))
                                     .frame(height: 10)
-                                    .foregroundColor(Color(white: 0.3))
                                 Spacer()
                             }
                             .frame(width: 100, height: 100)
@@ -116,6 +117,7 @@ struct FocusView: View {
                                 .scaledToFit()
                                 .frame(width: 40, height: 40)
                         }
+                        .foregroundColor(Color.prominent)
                         .frame(width: 100, height: 100)
                     }
                     if viewModel.timer.isPaused {
@@ -133,7 +135,6 @@ struct FocusView: View {
                                 Text("Done")
                                     .font(.custom(Settings.shared.fontName, size: 10.0))
                                     .frame(height: 10)
-                                    .foregroundColor(Color(white: 0.3))
                                 Spacer()
                             }
                             .frame(width: 100, height: 100)
@@ -151,10 +152,10 @@ struct FocusView: View {
                             .lineLimit(4)
                             .fixedSize(horizontal: false, vertical: true)
                             .font(Font.custom(Settings.shared.fontName, size: 20))
-                            .foregroundColor(Color(white: 0.3))
                     } else {
                         Text("+ task")
                             .font(Font.custom(Settings.shared.fontName, size: 20))
+                            .foregroundColor(Color.prominent)
                             .frame(minWidth: 50)
                             .frame(height: 50)
                     }
@@ -173,10 +174,10 @@ struct FocusView: View {
                             .font(.custom("RussoOne-Regular", size: 24))
                             .bold()
                             .padding()
-                            .foregroundColor(Color(white: 0.3))
                     }
                 }
             }
+            .foregroundColor(Color.primary)
             .toolbarBackground(.visible, for: .navigationBar)
         }.onAppear {
             viewModel.activate(modelContext: modelContext)

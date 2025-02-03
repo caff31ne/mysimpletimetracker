@@ -25,7 +25,6 @@ struct StopwatchView: View {
                 
                 Text(viewModel.time)
                     .font(Font.custom("ProFont", size: 48))
-                    .foregroundColor(Color(white: 0.3))
                 
                 Color.clear
                     .frame(height: 20)
@@ -46,7 +45,6 @@ struct StopwatchView: View {
                                 Text("Cancel")
                                     .font(.custom(Settings.shared.fontName, size: 10.0))
                                     .frame(height: 10)
-                                    .foregroundColor(Color(white: 0.3))
                                 Spacer()
                             }
                             .frame(width: 100, height: 100)
@@ -78,7 +76,6 @@ struct StopwatchView: View {
                                 Text("Done")
                                     .font(.custom(Settings.shared.fontName, size: 10.0))
                                     .frame(height: 10)
-                                    .foregroundColor(Color(white: 0.3))
                                 Spacer()
                             }
                             .frame(width: 100, height: 100)
@@ -96,12 +93,12 @@ struct StopwatchView: View {
                             .lineLimit(2)
                             .fixedSize(horizontal: false, vertical: true)
                             .font(Font.custom(Settings.shared.fontName, size: 20))
-                            .foregroundColor(Color(white: 0.3))
                     } else {
                         Text("+ task")
                             .font(Font.custom(Settings.shared.fontName, size: 20))
                             .frame(minWidth: 50)
                             .frame(height: 50)
+                            .foregroundColor(Color.prominent)
                     }
                 })
                 .frame(height: 50)
@@ -116,11 +113,11 @@ struct StopwatchView: View {
                         .font(.custom("RussoOne-Regular", size: 24))
                         .bold()
                         .padding()
-                        .foregroundColor(Color(white: 0.3))
                 }
             }
             .navigationBarTitleDisplayMode(.inline)
             .toolbarBackground(.visible, for: .navigationBar)
+            .foregroundColor(Color.primary)
         }.onAppear {
             viewModel.activate(modelContext: modelContext)
         }

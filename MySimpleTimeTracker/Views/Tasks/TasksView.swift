@@ -39,7 +39,6 @@ struct TasksView: View {
                         .font(.custom("RussoOne-Regular", size: 24))
                         .bold()
                         .padding()
-                        .foregroundColor(Color(white: 0.3))
                 }
                 ToolbarItem(placement: .topBarLeading) {
                     Button {
@@ -63,6 +62,7 @@ struct TasksView: View {
             }
             .navigationBarTitleDisplayMode(.inline)
             .toolbarBackground(.visible, for: .navigationBar)
+            .foregroundColor(Color.primary)
         }
         .onAppear {
             viewModel.modelContext = modelContext
