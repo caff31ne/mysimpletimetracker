@@ -2,43 +2,31 @@
 //  StatsView.swift
 //  MySimpleTimeTracker
 //
-//  Created by Vitalii Bondur on 1/17/25.
+//  Created by Vitalii Bondur on 2/10/25.
 //
 
 import SwiftUI
-import SwiftData
 
 struct StatsView: View {
     
-    @Environment(\.modelContext) private var modelContext
-    @Query private var records: [FocusInterval]
-    
-    private func title(_ type: FocusIntervalType) -> String {
-        switch type {
-        case .work: return "Work"
-        case .shortRest: return "Short Rest"
-        case .longRest: return "Long Rest"
-        }
-    }
+    @State private var selectedDate = Date()
     
     var body: some View {
         NavigationStack {
-            List {
-                ForEach(records) {
-                    Text(title($0.type))
-                        .font(Font.custom(Settings.shared.fontName, size: 16))
-                }
+            VStack {
+                CalendarView(selectedDate: $selectedDate)
+                DailyTaskSummaryView(selectedDate: selectedDate)
             }
-            .navigationTitle("")
             .toolbar {
                 ToolbarItem(placement: .principal) {
-                    Text("Statistics")
+                    Text("Log")
                         .font(.custom("RussoOne-Regular", size: 24))
                         .bold()
                         .padding()
                         .foregroundColor(Color(white: 0.3))
                 }
             }
+            .navigationTitle("Statistics")
             .navigationBarTitleDisplayMode(.inline)
             .toolbarBackground(.visible, for: .navigationBar)
         }
@@ -47,5 +35,4 @@ struct StatsView: View {
 
 #Preview {
     StatsView()
-        .modelContainer(for: FocusInterval.self, inMemory: true)
 }

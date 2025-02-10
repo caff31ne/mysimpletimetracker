@@ -47,16 +47,19 @@ struct TasksView: View {
                         }
                     } label: {
                         Image(systemName: "line.3.horizontal.decrease")
+                            .foregroundColor(Color.prominent)
                     }
                 }
                 ToolbarItem(placement: .topBarTrailing) {
                     EditButton()
+                        .foregroundColor(Color.prominent)
                 }
                 ToolbarItem {
                     Button {
                         viewModel.showAddNewTask = true
                     } label: {
                         Image(systemName: "plus")
+                            .foregroundColor(Color.prominent)
                     }
                 }
             }

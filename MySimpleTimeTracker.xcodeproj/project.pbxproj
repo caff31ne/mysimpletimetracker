@@ -18,11 +18,17 @@
 		D26F8BEA2D3AA0700006015C /* StopwatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26F8BE92D3AA0700006015C /* StopwatchView.swift */; };
 		D26F8BEC2D3ABE7E0006015C /* FocusInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26F8BEB2D3ABE7E0006015C /* FocusInterval.swift */; };
 		D26F8BED2D3ABE7E0006015C /* FocusInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26F8BEB2D3ABE7E0006015C /* FocusInterval.swift */; };
-		D26F8BF02D3AEAE50006015C /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26F8BEF2D3AEAE50006015C /* StatsView.swift */; };
-		D26F8BF12D3AEAE50006015C /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26F8BEF2D3AEAE50006015C /* StatsView.swift */; };
+		D26F8BF02D3AEAE50006015C /* TaskLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26F8BEF2D3AEAE50006015C /* TaskLogView.swift */; };
+		D26F8BF12D3AEAE50006015C /* TaskLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26F8BEF2D3AEAE50006015C /* TaskLogView.swift */; };
 		D26F8BF42D3B0F2D0006015C /* FocusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26F8BF32D3B0F260006015C /* FocusViewModel.swift */; };
 		D26F8BFA2D3B47190006015C /* Electrolize-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D26F8BF62D3B47190006015C /* Electrolize-Regular.ttf */; };
 		D27A2A9C2D516D2D001141A5 /* Color+Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27A2A9B2D516D1D001141A5 /* Color+Assets.swift */; };
+		D27A2A9E2D5A8761001141A5 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27A2A9D2D5A8761001141A5 /* StatsView.swift */; };
+		D27A2A9F2D5A8761001141A5 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27A2A9D2D5A8761001141A5 /* StatsView.swift */; };
+		D27A2AA12D5A877B001141A5 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27A2AA02D5A877B001141A5 /* CalendarView.swift */; };
+		D27A2AA22D5A877B001141A5 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27A2AA02D5A877B001141A5 /* CalendarView.swift */; };
+		D27A2AA42D5AA478001141A5 /* DailyTaskSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27A2AA32D5AA478001141A5 /* DailyTaskSummaryView.swift */; };
+		D27A2AA52D5AA478001141A5 /* DailyTaskSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27A2AA32D5AA478001141A5 /* DailyTaskSummaryView.swift */; };
 		D2E5243E2D44500E004502CF /* FocusIntervalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E5243D2D445005004502CF /* FocusIntervalType.swift */; };
 		D2E5243F2D44500E004502CF /* FocusIntervalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E5243D2D445005004502CF /* FocusIntervalType.swift */; };
 		D2E524412D449438004502CF /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E524402D449434004502CF /* Settings.swift */; };
@@ -84,11 +90,14 @@
 		D26F8BE92D3AA0700006015C /* StopwatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchView.swift; sourceTree = "<group>"; };
 		D26F8BEB2D3ABE7E0006015C /* FocusInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusInterval.swift; sourceTree = "<group>"; };
 		D26F8BEE2D3ABF310006015C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D26F8BEF2D3AEAE50006015C /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		D26F8BEF2D3AEAE50006015C /* TaskLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskLogView.swift; sourceTree = "<group>"; };
 		D26F8BF32D3B0F260006015C /* FocusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusViewModel.swift; sourceTree = "<group>"; };
 		D26F8BF62D3B47190006015C /* Electrolize-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Electrolize-Regular.ttf"; sourceTree = "<group>"; };
 		D26F8BF72D3B47190006015C /* OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		D27A2A9B2D516D1D001141A5 /* Color+Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Assets.swift"; sourceTree = "<group>"; };
+		D27A2A9D2D5A8761001141A5 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		D27A2AA02D5A877B001141A5 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		D27A2AA32D5AA478001141A5 /* DailyTaskSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTaskSummaryView.swift; sourceTree = "<group>"; };
 		D2E5243D2D445005004502CF /* FocusIntervalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusIntervalType.swift; sourceTree = "<group>"; };
 		D2E524402D449434004502CF /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		D2E524442D45CDC6004502CF /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -350,7 +359,10 @@
 		D2FF5ABD2D4A6A4F008823AA /* Stats */ = {
 			isa = PBXGroup;
 			children = (
-				D26F8BEF2D3AEAE50006015C /* StatsView.swift */,
+				D26F8BEF2D3AEAE50006015C /* TaskLogView.swift */,
+				D27A2A9D2D5A8761001141A5 /* StatsView.swift */,
+				D27A2AA02D5A877B001141A5 /* CalendarView.swift */,
+				D27A2AA32D5AA478001141A5 /* DailyTaskSummaryView.swift */,
 			);
 			path = Stats;
 			sourceTree = "<group>";
@@ -507,16 +519,19 @@
 				D20A67552D39BFEA009BDBCE /* ContentView.swift in Sources */,
 				D2FF5ABC2D4A5BB2008823AA /* TimerViewModel.swift in Sources */,
 				D2E5246C2D46A883004502CF /* TaskFocusView.swift in Sources */,
+				D27A2AA22D5A877B001141A5 /* CalendarView.swift in Sources */,
+				D27A2AA52D5AA478001141A5 /* DailyTaskSummaryView.swift in Sources */,
 				D2F0E3BC2D3D69F900173264 /* TaskAssignment.swift in Sources */,
 				D20A67532D39BFEA009BDBCE /* MySimpleTimeTrackerApp.swift in Sources */,
 				D2E5246F2D46DD66004502CF /* TaskFilteredListView.swift in Sources */,
 				D26F8BF42D3B0F2D0006015C /* FocusViewModel.swift in Sources */,
 				D27A2A9C2D516D2D001141A5 /* Color+Assets.swift in Sources */,
-				D26F8BF02D3AEAE50006015C /* StatsView.swift in Sources */,
+				D26F8BF02D3AEAE50006015C /* TaskLogView.swift in Sources */,
 				D26F8BEA2D3AA0700006015C /* StopwatchView.swift in Sources */,
 				D2F0E3BF2D3D6B9200173264 /* TasksView.swift in Sources */,
 				D2E524412D449438004502CF /* Settings.swift in Sources */,
 				D2FF5AC02D4B1FD9008823AA /* TaskEditView.swift in Sources */,
+				D27A2A9F2D5A8761001141A5 /* StatsView.swift in Sources */,
 				D2E524692D467BFE004502CF /* StopwatchViewModel.swift in Sources */,
 				D2FF5ABA2D49CCDE008823AA /* TaskCreateView.swift in Sources */,
 				D2F0E3B92D3D685900173264 /* CustomInterval.swift in Sources */,
@@ -536,9 +551,12 @@
 				D2F0E3BA2D3D685900173264 /* CustomInterval.swift in Sources */,
 				D2E524422D449438004502CF /* Settings.swift in Sources */,
 				D2E5243E2D44500E004502CF /* FocusIntervalType.swift in Sources */,
+				D27A2A9E2D5A8761001141A5 /* StatsView.swift in Sources */,
+				D27A2AA12D5A877B001141A5 /* CalendarView.swift in Sources */,
+				D27A2AA42D5AA478001141A5 /* DailyTaskSummaryView.swift in Sources */,
 				D20A67662D39BFEB009BDBCE /* MySimpleTimeTrackerTests.swift in Sources */,
 				D26F8BED2D3ABE7E0006015C /* FocusInterval.swift in Sources */,
-				D26F8BF12D3AEAE50006015C /* StatsView.swift in Sources */,
+				D26F8BF12D3AEAE50006015C /* TaskLogView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

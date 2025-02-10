@@ -59,6 +59,7 @@ struct StopwatchView: View {
                                 .scaledToFit()
                                 .frame(width: 40, height: 40)
                         }
+                        .foregroundColor(Color.prominent)
                         .frame(width: 100, height: 100)
                     }
                     if viewModel.timer.isPaused {

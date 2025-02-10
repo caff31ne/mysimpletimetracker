@@ -11,9 +11,9 @@ final class Settings: Codable {
     
     var fontName = "SpaceMono-Regular"
     
-    var workDuration: TimeInterval = 25 //* 60
-    var shortRestDuation: TimeInterval = 5 //* 60
-    var longRestDuration: TimeInterval = 15 //      * 60
+    var workDuration: TimeInterval = 25 * 60
+    var shortRestDuation: TimeInterval = 5 * 60
+    var longRestDuration: TimeInterval = 15 * 60
     
     var focusTaskId: UUID? {
         didSet {

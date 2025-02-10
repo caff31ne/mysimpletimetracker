@@ -34,9 +34,9 @@ struct ContentView: View {
                 TasksView()
             }
             
-            /* Tab("Statistics", systemImage: "chart.bar", value: .stats) {
+            Tab("Statistics", systemImage: "chart.bar", value: .stats) {
                 StatsView()
-            } */
+            }
         }
         .tint(Color.orange)
     }
